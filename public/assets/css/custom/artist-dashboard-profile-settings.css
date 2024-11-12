@@ -1,0 +1,179 @@
+:root {
+    --primary-font: "Inter", serif;
+    --secondary-font: "Manrope", sans-serif;
+    --tertiary-font: "Poppins", sans-serif;
+    --special-font: "Be Vietnam Pro", sans-serif;
+    --headline-font: "DM Sans", sans-serif;
+    --public-sans-font: "Public Sans", sans-serif;
+    --base-transition: all 0.4s ease-in-out;
+    --primary: #024cda;
+    --text-dark: #000;
+    --text-dark02: #1a2232;
+    --text-white: #fff;
+    --input-placeholder: #77878F;
+    --common--white--border: 1px solid #fff;
+    --common--gray--border: 1px solid #E4E7E9;
+    --primary-gradient: linear-gradient(180deg, #024cda -1.64%, #012874 100%);
+}
+
+.bi-profile--settings--page--wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: var(--common--gray--border);
+    padding: 24px;
+    border-radius: 20px;
+}
+
+.bi-profile--settings--page--content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.bi-profile--settings--user--info--box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    border-radius: 16px;
+    background: var(--primary-gradient);
+    gap: 20px;
+}
+
+.bi-profile--settings--user--info--box--left {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.bi--user--avatar--preview {
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    border-radius: 50%;
+    border: 2px solid var(--text-white);
+    overflow: hidden;
+}
+
+.bi--user--avatar--preview img {
+    width: 100%;
+
+    height: 100%;
+    object-fit: cover;
+}
+
+.bi--user--info--side--settings--page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.bi--settings--user--name {
+    color: var(--text-white);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.bi--settings--user--email,
+.bi--settings--user--role {
+    color: var(--text-white);
+    text-align: start;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+
+.bi-profile--settings--user--info--box--right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    min-width: fit-content;
+}
+
+.bi--upload--image--remove--btn {
+    color: var(--text-white);
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    /* 166.667% */
+}
+
+.bi--upload--image--btn {
+    color: var(--text-white);
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    /* 166.667% */
+    padding: 8px 12px;
+    border-radius: 10px;
+    background: var(--primary);
+    cursor: pointer;
+}
+.bi-profile--settings--form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+.bi-profile--setting--fields--wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.bi-profile--setting--fields--inner--wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.bi-profile--setting--fields--inner--inputs--wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+}
+.bi-profile--settings--form hr{
+    width: 100%;
+    border: var(--common--gray--border);
+}
+.bi-profile--setting--btns{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}

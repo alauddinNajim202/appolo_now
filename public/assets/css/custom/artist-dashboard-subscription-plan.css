@@ -1,0 +1,264 @@
+:root {
+    --primary-font: "Inter", serif;
+    --secondary-font: "Manrope", sans-serif;
+    --tertiary-font: "Poppins", sans-serif;
+    --special-font: "Be Vietnam Pro", sans-serif;
+    --headline-font: "DM Sans", sans-serif;
+    --public-sans-font: "Public Sans", sans-serif;
+    --base-transition: all 0.4s ease-in-out;
+    --primary: #024cda;
+    --text-dark: #000;
+    --text-dark02: #1a2232;
+    --text-white: #fff;
+    --input-placeholder: #77878F;
+    --common--white--border: 1px solid #fff;
+    --common--gray--border: 1px solid #E4E7E9;
+    --primary-gradient: linear-gradient(180deg, #024cda -1.64%, #012874 100%);
+}
+
+
+.bi-artists--subscription--plan--page--wrapper {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 20px;
+    border: var(--common--gray--border);
+    background: var(--text-white);
+    padding: 24px;
+}
+
+.bi-artist--dashboard--subscription--pricing--section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.bi-artist--dashboard--subscription--plans--container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.bi-subscription--plans {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    /* Centers items horizontally */
+    align-items: center;
+    /* Centers items vertically */
+    margin-top: 40px;
+}
+
+
+.bi-artist--dashboard--pricing--checkout--section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.bi-pricing--plan--checkout--form--container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.bi-artist--plan--info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.bi--artist--chosen--plan--name {
+    color: #141416;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.bi-artist--chosen--plan--price {
+    color: #0246D5;
+
+    /* Heading 2 */
+    font-family: var(--tertiary-font);
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 47px;
+    letter-spacing: -1.12px;
+}
+
+.bi-artist--chosen--plan--price sup {
+    color: #141416;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    top: -1.3em;
+}
+
+.bi-artist--plan--payment--methods--container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.bi-artist--plan--payment--methods--heading {
+    color: #A1A5B3;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.14px;
+}
+
+.bi-artist--plan--payment--methods--lists {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.bi-artist--plan--payment--row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.bi-artist--plan--checkout--label {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    gap: 8px;
+    border: var(--common--gray--border);
+    background-color: var(--text-white);
+    padding: 8px 18px;
+    color: #1D2026;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.14px;
+    transition: var(--base-transition);
+    cursor: pointer;
+}
+
+.bi-payment--card--logo {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+}
+
+.bi-payment--card--logo svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bi-payment--checked--icon {
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--base-transition);
+}
+
+.bi-payment--checked--icon svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bi-artist--plan--payment--row input:checked+.bi-artist--plan--checkout--label {
+    border: 1px solid #23BD33;
+}
+
+.bi-artist--plan--payment--row input:checked+.bi-artist--plan--checkout--label .bi-payment--checked--icon {
+    visibility: visible;
+    opacity: 1;
+}
+
+.bi-add--new--card--info--btn {
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 17px;
+    border-radius: 10px;
+    border: var(--common--gray--border);
+    background-color: var(--text-white);
+    color: #1D2026;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+
+}
+
+.add--icon {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--primary);
+    border-radius: 50%;
+}
+
+.bi-add--new--card--form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.bi-artist--add--new--card--input--outer--wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+}
+.bi-artist--add--new--card--input--wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+

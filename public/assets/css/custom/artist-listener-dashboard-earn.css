@@ -1,0 +1,434 @@
+:root {
+  --primary-font: "Inter", serif;
+  --secondary-font: "Manrope", sans-serif;
+  --tertiary-font: "Poppins", sans-serif;
+  --special-font: "Be Vietnam Pro", sans-serif;
+  --headline-font: "DM Sans", sans-serif;
+  --base-transition: all 0.4s ease-in-out;
+  --primary: #024cda;
+  --text-dark: #000;
+  --text-dark02: #1a2232;
+  --text-white: #fff;
+  --common--white--border: 1px solid #fff;
+  --primary-gradient: linear-gradient(180deg, #024cda -1.64%, #012874 100%);
+}
+
+/* -- artist listener earn page starts -- */
+
+.sm--listener-earn-wrapper {
+  border-radius: 20px;
+  padding: 24px;
+  border: 1px solid #e6e6e6;
+  background: var(--white, #fff);
+}
+
+.sm--featured-artist-and-metrics-title-text {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.4px;
+  padding-bottom: 24px;
+}
+
+/* -- streams and rewards styles starts -- */
+
+.sm--total-streams-and-rewards-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+/* streams */
+.sm--total-streams {
+  display: flex;
+  background: var(--primary-gradient);
+  padding: 32px;
+  width: 100%;
+  gap: 20px;
+  border-radius: 20px;
+}
+
+.sm--total-streams-right {
+  width: 100%;
+}
+
+.sm--total-streams-right-subtitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+.sm--total-streams-right-subtitle-text {
+  color: #fff;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: -0.13px;
+}
+
+.sm--total-streams-right-title {
+  color: #fff;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: -1.44px;
+}
+
+/* rewards */
+
+.sm--total-rewards {
+  display: flex;
+  background: var(--text-dark);
+  padding: 32px;
+  width: 100%;
+  gap: 20px;
+  border-radius: 20px;
+}
+
+.sm-total-rewards-right {
+  width: 100%;
+}
+
+.sm--total-rewards-right-subtitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+.sm--total-rewards-right-subtitle-text {
+  color: #fff;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: -0.13px;
+}
+
+.sm--total-rewards-right-title {
+  color: #fff;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: -1.44px;
+}
+
+.sm-total-rewards-left {
+  background-color: var(--primary);
+  border-radius: 50%;
+  padding: 5px;
+}
+
+/* -- music player starts -- */
+
+.sm--music-player-container {
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 24px;
+  background: linear-gradient(3deg, #000 -339.19%, #024cda 133.51%);
+  backdrop-filter: blur(37px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sm--song-info-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sm--song-info-image-wrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.sm--song-info-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sm--song-info-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+#sm--audio-play-pause-icon {
+  cursor: pointer;
+}
+
+.sm--song-info-name {
+  color: var(--text-white);
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+.sm--song-info-singer {
+  color: #d2d2d2;
+  font-family: var(--secondary-font);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 16.8px */
+}
+
+/* .sm--audio-player audio::-webkit-media-controls-panel {
+} */
+
+.sm--music-top-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.sm--audio-player {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  flex: 1 1 0%;
+  color: white;
+}
+
+#sm--audio{
+    visibility: hidden;
+    display: none;
+}
+
+.sm--social-button-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sm--audio-track-range {
+  flex: 1 1 0%;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 7px;
+  background-color: #1A53BF;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+
+
+} 
+ .sm--audio-track-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  cursor: grab;
+  background-color: #ffffff;
+  border: 2px solid rgb(57, 98, 130);
+  border-radius: 100%;
+}
+
+.sm--audio-player-next-btn {
+  border-radius: 100px;
+  background: var(--color-white-10, rgba(255, 255, 255, 0.1));
+  padding: 6px 17px;
+  cursor: pointer;
+  border: none;
+}
+
+.sm--audio-player-like-btn {
+  border-radius: 100px;
+  background: var(--color-white-10, rgba(255, 255, 255, 0.1));
+  padding: 6px 17px;
+  cursor: pointer;
+  border: none;
+}
+
+.sm--audio-player-dislike-btn {
+  border-radius: 100px;
+  background: var(--color-white-10, rgba(255, 255, 255, 0.1));
+  padding: 6px 17px;
+  cursor: pointer;
+  border: none;
+}
+
+.sm--add-button-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sm--add-comment-btn {
+  border-radius: 100px;
+  background: var(--color-white-10, rgba(255, 255, 255, 0.1));
+  padding: 8px 17px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.sm--add-comment-btn-text {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.sm--add-song-btn {
+  border-radius: 100px;
+  background: var(--color-white-10, rgba(255, 255, 255, 0.1));
+  padding: 8px 17px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.sm--add-song-btn-text {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.sm--write-comment-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding-left: 65px;
+}
+
+.sm--send-message-btn {
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 17px;
+  border: none;
+}
+.sm--send-message-input {
+  border-radius: 100px;
+  border: 1px solid #cbd5e1;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 16px;
+  color: white;
+  width: 100%;
+  flex: 1 1 0%;
+}
+
+.sm--write-comment-profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.sm--write-comment-profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sm--send-message-input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* -- music player ends -- */
+
+/* -- listening history -- */
+
+.sm--listening-history-container {
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e6e6e6;
+  margin-top: 24px;
+}
+
+.sm--listening-history-songs-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sm--listening-history-title {
+  color: #000;
+  font-size: 22.89px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding-bottom: 24px;
+}
+
+.sm--listening-history-song-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sm--listening-history-song {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sm--listening-history-song-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.sm--listening-history-song-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sm--listening-history-song-name {
+  color: rgba(0, 0, 0, 0.75);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.sm-listening-history-song-singer {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sm--listening-history-song-time {
+  color: #000;
+  font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* -- artist listener earn page ends -- */
