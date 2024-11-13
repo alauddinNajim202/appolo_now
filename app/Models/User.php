@@ -23,7 +23,11 @@ class User extends Authenticatable
         'password',
         'role',
         'otp',
-        'otp_expires_at'
+        'otp_expires_at',
+        'google_id',
+        'spotify_id',
+        'apple_id',
+
     ];
 
     /**

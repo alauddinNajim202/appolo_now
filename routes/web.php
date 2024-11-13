@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\ForgotPasswordController;
+use App\Http\Controllers\Auth\GoogleController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Web\Backend\Artist\ArtistDiscoverController;
 use Illuminate\Support\Facades\Route;
@@ -25,6 +26,13 @@ Route::middleware('guest')->group(function () {
 
     Route::get('/reset-password-form', [ForgotPasswordController::class, 'show_reset_password_form'])->name('reset_password.form');
     Route::post('/update-reset-password', [ForgotPasswordController::class, 'reset_password'])->name('reset_password.reset');
+
+
+
+
+    // google login routes
+    Route::get('auth/google', [GoogleController::class, 'redirectToGoogle'])->name('auth.google');
+    Route::get('auth/google/callback', [GoogleController::class, 'handleGoogleCallback'])->name('auth.google.callback');
 });
 
 

@@ -154,7 +154,7 @@
 
 
                         @if (Route::has('forgot_password.form_show'))
-                            <a href="{{route('forgot_password.form_show')}}">Forget Password?</a>
+                            <a href="{{ route('forgot_password.form_show') }}">Forget Password?</a>
                         @endif
                     </div>
                     <button type="submit" class="bi-auth--page--common--btn">Login</button>
@@ -165,7 +165,7 @@
                             <i class="fa-brands fa-apple fa-xl " style="color: #000000;"></i>
                             <span>Apple</span>
                         </a>
-                        <a href="#" class="bi-auth--page--login--with--btn">
+                        <a href="{{ route('auth.google') }}" class="bi-auth--page--login--with--btn">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                                 viewBox="0 0 25 25" fill="none">
                                 <path

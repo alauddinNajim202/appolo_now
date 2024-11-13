@@ -20,7 +20,12 @@ return new class extends Migration
             $table->enum('role', ['listener', 'artist', 'admin']);
 
             $table->string('otp')->nullable();
+
             $table->timestamp('otp_expires_at')->nullable();
+
+            $table->string('google_id')->nullable();
+            $table->string('spotify_id')->nullable();
+            $table->string('apple_id')->nullable();
 
             $table->rememberToken();
             $table->timestamps();

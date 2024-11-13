@@ -50,14 +50,16 @@ class RegisteredUserController extends Controller
 
         Auth::login($user);
 
-        if ($user && $request->role === $user->role) {
+
+        if ($user && $request->role == $user->role) {
+            Auth::login($user);
+
+
             if ($user->role === 'artist') {
-                return redirect()->intended(route('artist.dashboard'));
-
+                return redirect()->route('artist.dashboard');
             } elseif ($user->role === 'listener') {
-                return redirect()->intended(route('listener.dashboard'));
-            } elseif ($user->role === 'admin'){
-
+                return redirect()->route('listener.dashboard');
+            }elseif ($user->role === 'admin'){
                 return redirect()->intended(route('dashboard'));
             }
         }
