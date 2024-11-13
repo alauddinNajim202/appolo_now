@@ -151,7 +151,11 @@
                             <input type="checkbox" name="remember" id="remember_me">
                             <label for="terms">Remember me</label>
                         </div>
-                        <a href="forget-password.html">Forget Password?</a>
+
+
+                        @if (Route::has('forgot_password.form_show'))
+                            <a href="{{route('forgot_password.form_show')}}">Forget Password?</a>
+                        @endif
                     </div>
                     <button type="submit" class="bi-auth--page--common--btn">Login</button>
                     <p class="bi-auth--page--bottom--text">Dose not have an account? <a

@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apollo Now || Forget Password</title>
+    <title>Apollo Now || Verify OTP</title>
+
+    <!-- favicon -->
+
+
 
     <!-- favicon -->
     <link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon_io/android-chrome-192x192.png" />
@@ -40,22 +44,22 @@
             <div class="auth-carasoul--side">
                 <div class="swiper auth-page--swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide" style="background-image: url(./assets/images/slide-image-1.png);">
+                        <div class="swiper-slide" style="background-image: url(./assets/images/slide-image-1.png)">
                             <h2 class="auth-page--carasoul--title">
                                 Original & Independent Content
                             </h2>
                         </div>
-                        <div class="swiper-slide" style="background-image: url(./assets/images/slide-image-2.png);">
+                        <div class="swiper-slide" style="background-image: url(./assets/images/slide-image-2.png)">
                             <h2 class="auth-page--carasoul--title">
                                 Connect your favorite platform
                             </h2>
                         </div>
-                        <div class="swiper-slide" style="background-image: url(./assets/images/slide-image-3.png);">
+                        <div class="swiper-slide" style="background-image: url(./assets/images/slide-image-3.png)">
                             <h2 class="auth-page--carasoul--title">
                                 Invest in your favorite song or artist
                             </h2>
                         </div>
-                        <div class="swiper-slide" style="background-image: url(./assets/images/slide-image-4.png);">
+                        <div class="swiper-slide" style="background-image: url(./assets/images/slide-image-4.png)">
                             <h2 class="auth-page--carasoul--title">
                                 Original & Independent Content
                             </h2>
@@ -65,25 +69,41 @@
                 </div>
             </div>
             <div class="auth-form--side">
-                <a class="bi-auth--page--back--btn" href="{{route('login')}}">
+                <a class="bi-auth--page--back--btn" href="{{route('forgot_password.form_show')}}">
                     <i class="fa-solid fa-angle-left fa-xl"></i>
                     <span>Back</span>
                 </a>
-                <h1 class="bi-auth--page--title mb-1">Forget Password</h1>
-                <p class="bi-forget--password--subtitle">Enter your registered email address. we’ll send you a code to
-                    reset your password.</p>
-                <form class="bi-common--auth--form" method="POST" action="{{route('forgot_password.send_otp')}}">
+                <h1 class="bi-auth--page--title mb-1">Enter OTP</h1>
+                <p class="bi-forget--password--subtitle text-danger">
+                    We have share a code of your registered email address
+
+                </p>
+                <form class="bi-common--auth--form" method="POST" action="{{ route('verify-otp.verify') }}">
                     @csrf
-                    <div class="bi-auth--page--common--field--wrapper">
-                        <label for="email" class="bi-auth--page--common--label">Email Address</label>
-                        <input required type="email" id="email" name="email" placeholder="john@example.com"
-                            class="bi-auth--page--common--input">
-                        <!-- <p class="error-msg--auth--page">This field is required</p> -->
+                    <div class="bi-auth--page--otp--wrapper">
+                        <input type="hidden" name="email" value="{{ session('email') }}">
+                        <input type="text" class="bi-common--otp--field" name="otp[]" maxlength="1"
+                            placeholder=" " required />
+                        <input type="text" class="bi-common--otp--field" name="otp[]" maxlength="1"
+                            placeholder=" " required />
+                        <input type="text" class="bi-common--otp--field" name="otp[]" maxlength="1"
+                            placeholder=" " required />
+                        <input type="text" class="bi-common--otp--field" name="otp[]" maxlength="1"
+                            placeholder=" " required />
+                        <input type="text" class="bi-common--otp--field" name="otp[]" maxlength="1"
+                            placeholder=" " required />
+                        <input type="text" class="bi-common--otp--field" name="otp[]" maxlength="1"
+                            placeholder=" " required />
                     </div>
 
+                    <!-- Display OTP error message -->
+                    @if ($errors->has('otp'))
+                        <div class="error-message" style="color: red; margin-top: 10px;">
+                            {{ $errors->first('otp') }}
+                        </div>
+                    @endif
 
-                    <button type="submit" class="bi-auth--page--common--btn">Send OTP</button>
-
+                    <button type="submit" class="bi-auth--page--common--btn">Verify</button>
                 </form>
 
             </div>
@@ -100,6 +120,31 @@
     <script src="./assets/js/plugins.js"></script>
     <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const otpFields = document.querySelectorAll('.bi-common--otp--field');
+
+            otpFields.forEach((field, index) => {
+                field.addEventListener('input', (e) => {
+                    if (field.value.length === 1) {
+                        if (index < otpFields.length - 1) {
+                            otpFields[index + 1].focus();
+                        }
+                    }
+                });
+
+                field.addEventListener('keydown', (e) => {
+                    if (e.key === 'Backspace' && !field.value && index > 0) {
+                        otpFields[index - 1].focus();
+                    }
+                });
+            });
+        });
+    </script>
+
 </body>
 
 </html>

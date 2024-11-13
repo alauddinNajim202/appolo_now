@@ -19,7 +19,7 @@ class RegisteredUserController extends Controller
      */
     public function create(): View
     {
-        return view('web.website.layouts.sign-up');
+        return view('auth.sign-up');
     }
 
     /**
