@@ -22,6 +22,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 
 
 
@@ -33,6 +34,9 @@
 <!-- custom css -->
 
 <link rel="stylesheet" href="{{ asset('assets/css/custom/artist-listener-dashboard-discover.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/css/custom/artist-dashboard-profile-settings.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/css/custom/artist-dashboard-subscription-plan.css') }}"/>
+<link rel="stylesheet" href="{{ asset('assets/css/custom/artist-listener-dashboard-merch-store.css') }}"/>
 
 <link rel="stylesheet" href=" {{ asset('assets/css/style.css') }} " />
 <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}" />

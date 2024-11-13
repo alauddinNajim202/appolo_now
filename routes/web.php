@@ -6,6 +6,9 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Web\Backend\Artist\ArtistDiscoverController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Web\Backend\Artist\DashboardController as ArtishDashboardController;
+use App\Http\Controllers\Web\Backend\Artist\MerchStoreController;
+use App\Http\Controllers\Web\Backend\Artist\ProfileSettingController;
+use App\Http\Controllers\Web\Backend\Artist\SubscriptionPlansController;
 use App\Http\Controllers\Web\Backend\Listener\DashboardController as ListenerDashboardController;
 // Route::get('/', function () {
 //     return view('welcome');
@@ -49,14 +52,43 @@ Route::middleware('auth')->group(function () {
 });
 
 
+// artist routes
 Route::middleware('auth')->group(function () {
 
-    // dashboard routes
-    Route::get('/artist/dashboard', [ArtishDashboardController::class, 'index'])->name('artist.dashboard');
+    /// Artist Routes with Prefix
+    Route::prefix('artist-dashboard')->group(function () {
+
+        // Dashboard
+        Route::get('/', [ArtishDashboardController::class, 'index'])->name('artist.dashboard');
+
+        // Discover
+        Route::get('discover', [ArtistDiscoverController::class, 'index'])->name('artist.discover');
 
 
-    // discover routes
-    Route::get('/artist/discover', [ArtistDiscoverController::class, 'index'])->name('artist.discover');
+
+
+        // merchant routes
+        Route::get('merch-store', [MerchStoreController::class, 'index'])->name('artist.merch_store.index');
+
+
+
+
+
+        // subscriptions plans routes
+        Route::get('subscription-plans', [SubscriptionPlansController::class, 'index'])->name('artist.subscription_plans.index');
+        Route::get('subscription-plan-checkout', [SubscriptionPlansController::class, 'checkout'])->name('artist.subscription_plans.checkout');
+
+
+
+
+
+
+        // Profile Settings
+        Route::get('profile-settings', [ProfileSettingController::class, 'index'])->name('artist.profile_setting');
+        Route::post('profile-settings-store', [ProfileSettingController::class, 'store'])->name('artist.profile_setting.store');
+        Route::post('upload-profile-image', [ProfileSettingController::class, 'upload_image'])->name('artist.profile.upload_image');
+        Route::post('remove-profile-image', [ProfileSettingController::class, 'remove_image'])->name('artist.profile.remove_image');
+    });
 });
 
 

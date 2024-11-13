@@ -56,6 +56,7 @@
         </div>
         <div class="footer">
             <p>If you didn't request a password reset, please ignore this email.</p>
+            <p>Please do not reply to this message. This e-mail is confidential and may also be privileged</p>
             <p>Thank you, Applo Now </p>
         </div>
     </div>
