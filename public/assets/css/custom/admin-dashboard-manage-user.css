@@ -1,0 +1,294 @@
+.na-admin-dashboard-manage-discover-main-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: var(--common--gray--border);
+  padding: 24px;
+  border-radius: 20px;
+}
+
+.na-dashboard--common--page--heading {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  /* 160% */
+  letter-spacing: -0.4px;
+}
+
+/* tabs */
+.na-admin-dashboard-tab-wrapper,.na-admin-dashboard-manage-user-tab-panel-wrapper,.na-admin-dashboard-manage-user-pagination-wrapper {
+  width: 100%;
+}
+
+.na-admin-dashboard-tab-wrapper .nav-tabs {
+  border-bottom: var(--bs-nav-tabs-border-width) solid #024cda;
+}
+.na-admin-dashboard-tab-wrapper .nav-tabs .nav-link {
+    border-bottom: var(--bs-nav-tabs-border-width) solid #024cda;
+}
+
+.na-admin-dashboard-tab-wrapper nav .nav {
+  gap: 8px;
+}
+
+.na-admin-dashboard-tab-wrapper .nav-link.active {
+  background-color: #024cda;
+  border-color: var(--bs-nav-tabs-link-active-border-color);
+  border: 1px solid #024cda;
+}
+
+.na-admin-dashboard-tab-wrapper .nav-tabs .nav-link h4 {
+  color: #828282;
+}
+
+.na-admin-dashboard-tab-wrapper .nav-link.active h4 {
+  color: #fff;
+}
+
+.na-admin-dashboard-tab {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.na-admin-dashboard-tab h4 {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21.106px;
+}
+
+.na-admin-dashboard-tab span {
+  padding: 0 4px;
+  background-color: #005cf1;
+  color: white;
+  border-radius: 4px;
+}
+
+/* search input */
+.na-admin-dashboard-manage-user-search-date-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.na-admin-dashboard-manage-user-search-label {
+  position: relative;
+}
+
+.na-admin-dashboard-manage-user-search-label input {
+  padding: 10px 36px 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #ebebeb;
+  background: var(--Neutral-10, #fff);
+}
+
+.na-admin-dashboard-manage-user-search-svg {
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  right: 5%;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.na-admin-dashboard-manage-user-date-range-label {
+  position: relative;
+}
+
+#na-admin-dashboard-manage-user-date-range-input {
+  font-size: 14px;
+  padding-left: 40px;
+}
+
+.na-admin-dashboard-manage-user-date-range-label input {
+  padding: 10px 36px 10px 32px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid #ebebeb;
+  background: var(--Neutral-10, #fff);
+}
+
+.na-admin-dashboard-manage-user-date-range-svg {
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+  left: 5%;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+/* table */
+.na-admin-dashboard-manage-user-table-wrapper {
+  margin-top: 24px;
+}
+
+.na-admin-dashboard-manage-user-table-head {
+  width: 100%;
+  background-color: #fafafa;
+}
+
+.na-admin-dashboard-manage-user-table-head tr td {
+  padding: 16px;
+  cursor: pointer;
+  text-align: center;
+  border-right: 1px solid #ededed;
+}
+
+.na-admin-dashboard-manage-user-table-data-user-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.na-admin-dashboard-manage-user-table-data-user-information h4 {
+  color: #1a2232;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+.na-admin-dashboard-manage-user-table-data-user-information p {
+  color: #404040;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.072px;
+}
+
+.na-admin-dashboard-manage-user-table-user-account-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.na-admin-dashboard-manage-user-table-wrapper .table-responsive {
+  border: 1px solid #f5f5f5;
+  border-radius: 8px;
+}
+
+.na-admin-dashboard-manage-user-table-body tr td {
+  padding: 10px;
+}
+
+.na-admin-dashboard-manage-user-table-wrapper
+  .table-container
+  .table-responsive
+  thead
+  tr
+  th {
+  padding: 20px 10px;
+  background: #f9f9f9;
+  color: #1a2232;
+  font-size:14px;
+  cursor: pointer;
+}
+
+.na-admin-dashboard-manage-user-table-status-button {
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 100px;
+}
+
+.na-admin-dashboard-manage-user-table-body tr td svg {
+  margin-right: 8px;
+}
+
+.na-admin-dashboard-manage-user-table-status-button-active {
+  background-color: #e8f7f2;
+  color: #13a87d;
+}
+
+.na-admin-dashboard-manage-user-table-status-button-expire {
+  background: rgba(255, 96, 96, 0.1);
+  color: #ff6060;
+}
+
+.na-admin-dashboard-manage-user-table-body tr td {
+    color: #4e5566;
+    font-weight: 500;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+/* pagination */
+.na-admin-dashboard-manage-user-pagination-wrapper {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.na-admin-dashboard-manage-user-pagination-result p {
+  color: #404040;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.na-admin-dashboard-manage-user-pagination-button-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.na-admin-dashboard-manage-user-pagination-item {
+  min-width: 32px;
+  height: 32px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #475569;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.na-admin-dashboard-manage-user-pagination-item:hover {
+  background-color: #f1f5f9;
+  color: #2563eb;
+  border-color: #cbd5e1;
+}
+
+.na-admin-dashboard-manage-user-pagination-item-active {
+  background-color: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+.na-admin-dashboard-manage-user-pagination-dots {
+  color: #64748b;
+  padding: 0 4px;
+}
+
+.na-admin-dashboard-manage-user-pagination-arrow {
+  color: #475569;
+}
+
+.na-admin-dashboard-manage-user-pagination-arrow:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

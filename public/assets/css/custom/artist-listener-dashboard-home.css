@@ -365,6 +365,12 @@
   padding: 40px 0px 24px 0px;
 }
 
+.sm--engage-song-summary-container{
+  padding: 10px;
+  border: 1px solid rgb(233, 233, 233);
+  border-radius: 12px;
+}
+
 /* -- streams and rewards styles ends -- */
 
 /* -- listener dashboard home styles starts -- */

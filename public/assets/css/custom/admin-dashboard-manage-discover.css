@@ -1,0 +1,345 @@
+.na-admin-dashboard-manage-discover-main-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: var(--common--gray--border);
+  padding: 24px;
+  border-radius: 20px;
+}
+
+.na-admin-dashboard-manage-discover-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.na-dashboard--common--page--heading {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  /* 160% */
+  letter-spacing: -0.4px;
+}
+
+.na-admin-dashboard-manage-discover-title span {
+  color: #000;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  /* 266.667% */
+  letter-spacing: -0.24px;
+}
+
+/* input */
+.na-admin-dashboard-manage-discover-artist-limit-wrapper {
+  width: 100%;
+}
+
+.na-admin-dashboard-manage-artist-limit-title h4 {
+  color: #000;
+  font-family: 'Be Vietnam Pro';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  /* 100% */
+}
+
+.na-admin-dashboard-manage-discover-artist-limit-input-wrapper {
+  width: 100%;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.na-admin-dashboard-manage-discover-artist-limit-input-wrapper input {
+  border-radius: 10px;
+  border: 1px solid rgba(162, 161, 168, 0.2);
+  background: #fff;
+  width: 100%;
+  padding: 16px 20px;
+}
+
+.na-admin-dashboard-manage-discover-artist-limit-input-wrapper button {
+  border-radius: 12px;
+  border: 1px solid #efefef;
+  background: #024cda;
+  padding: 16px;
+  color: #fff;
+}
+
+/* all artists */
+.na-admin-dashboard-manage-discover-all-artist-wrapper {
+  margin-top: 16px;
+  display: flex;
+
+  width: 100%;
+  gap: 24px;
+}
+
+.na-admin-dashboard-manage-discover-discover-artist-wrapper {
+    min-width: 300px;
+    background: #1a1a1a;
+    padding: 20px 20px;
+    border-radius: 15px;
+    height: fit-content;
+}
+
+.na-admin-dashboard-manage-discover-discover-artist-cards-wrapper {
+  width: 100%;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(215px, 1fr)); */
+  grid-template-columns: repeat(3,1fr);
+  gap: 24px;
+  height: fit-content;
+}
+
+/* left side */
+.na-admin-dashboard-manage-discover-discover-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #fff;
+}
+
+.na-admin-dashboard-manage-discover-discover-header h3 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* search input */
+.na-admin-dashboard-manage-discover-search-input-wrapper {
+  margin-top: 32px;
+}
+
+.na-admin-dashboard-manage-discover-search-input-wrapper label {
+  width: 100%;
+}
+
+.na-admin-dashboard-manage-discover-search-input-wrapper #discoverArtistSearch {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  border: 1px solid #ebebeb;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.na-admin-dashboard-manage-search-input-svg-container {
+  position: absolute;
+  right: 4%;
+  top: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+/* accordion */
+.na-admin-dashboard-discover-accordion-wrapper {
+  margin-top: 32px;
+}
+
+.na-admin-dashboard-discover-accordion-wrapper .accordion {
+  --bs-accordion-bg: transparent;
+  --bs-accordion-border-color: none;
+}
+
+.na-admin-dashboard-discover-accordion-wrapper .accordion-button:focus {
+  border: none;
+}
+
+.accordion {
+  --bs-accordion-color: var(--bs-body-color);
+  --bs-accordion-bg: var(--bs-body-bg);
+  --bs-accordion-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+  --bs-accordion-border-color: var(--bs-border-color);
+  --bs-accordion-border-width: var(--bs-border-width);
+  --bs-accordion-border-radius: var(--bs-border-radius);
+  --bs-accordion-inner-border-radius: calc(
+    var(--bs-border-radius) - (var(--bs-border-width))
+  );
+  --bs-accordion-btn-padding-x: 1.25rem;
+  --bs-accordion-btn-padding-y: 1rem;
+  --bs-accordion-btn-color: var(--bs-body-color);
+  --bs-accordion-btn-bg: var(--bs-accordion-bg);
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='18' height='19' viewBox='0 0 18 19' fill='none'%3e%3cg clip-path='url(%23clip0_2697_14383)'%3e%3cpath d='M17.25 8.75H9.75V1.25C9.75 1.05109 9.67098 0.860322 9.53033 0.71967C9.38968 0.579018 9.19891 0.5 9 0.5C8.80109 0.5 8.61032 0.579018 8.46967 0.71967C8.32902 0.860322 8.25 1.05109 8.25 1.25V8.75H0.75C0.551088 8.75 0.360322 8.82902 0.21967 8.96967C0.0790176 9.11032 0 9.30109 0 9.5C0 9.69891 0.0790176 9.88968 0.21967 10.0303C0.360322 10.171 0.551088 10.25 0.75 10.25H8.25V17.75C8.25 17.9489 8.32902 18.1397 8.46967 18.2803C8.61032 18.421 8.80109 18.5 9 18.5C9.19891 18.5 9.38968 18.421 9.53033 18.2803C9.67098 18.1397 9.75 17.9489 9.75 17.75V10.25H17.25C17.4489 10.25 17.6397 10.171 17.7803 10.0303C17.921 9.88968 18 9.69891 18 9.5C18 9.30109 17.921 9.11032 17.7803 8.96967C17.6397 8.82902 17.4489 8.75 17.25 8.75Z' fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='clip0_2697_14383'%3e%3crect width='18' height='18' fill='white' transform='translate(0 0.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+  --bs-accordion-btn-icon-width: 1.25rem;
+  --bs-accordion-btn-icon-transform: rotate(-180deg);
+  --bs-accordion-btn-icon-transition: transform 0.3s ease-in-out;
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='18' height='19' viewBox='0 0 18 19' fill='none'%3e%3cg clip-path='url(%23clip0_2697_14383)'%3e%3cpath d='M17.25 8.75H9.75V1.25C9.75 1.05109 9.67098 0.860322 9.53033 0.71967C9.38968 0.579018 9.19891 0.5 9 0.5C8.80109 0.5 8.61032 0.579018 8.46967 0.71967C8.32902 0.860322 8.25 1.05109 8.25 1.25V8.75H0.75C0.551088 8.75 0.360322 8.82902 0.21967 8.96967C0.0790176 9.11032 0 9.30109 0 9.5C0 9.69891 0.0790176 9.88968 0.21967 10.0303C0.360322 10.171 0.551088 10.25 0.75 10.25H8.25V17.75C8.25 17.9489 8.32902 18.1397 8.46967 18.2803C8.61032 18.421 8.80109 18.5 9 18.5C9.19891 18.5 9.38968 18.421 9.53033 18.2803C9.67098 18.1397 9.75 17.9489 9.75 17.75V10.25H17.25C17.4489 10.25 17.6397 10.171 17.7803 10.0303C17.921 9.88968 18 9.69891 18 9.5C18 9.30109 17.921 9.11032 17.7803 8.96967C17.6397 8.82902 17.4489 8.75 17.25 8.75Z' fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='clip0_2697_14383'%3e%3crect width='18' height='18' fill='white' transform='translate(0 0.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+  --bs-accordion-btn-focus-border-color: #none;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-active-bg: none;
+}
+
+.na-admin-dashboard-discover-accordion-wrapper .accordion-button {
+  padding: 8px 0px;
+}
+.na-admin-dashboard-discover-accordion-wrapper .accordion-body {
+  padding: 5px 0px;
+}
+
+.na-admin-dashboard-discover-accordion-wrapper .accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='18' height='19' viewBox='0 0 18 19' fill='none'%3e%3cg clip-path='url(%23clip0_2697_14383)'%3e%3cpath d='M17.25 8.75H9.75V1.25C9.75 1.05109 9.67098 0.860322 9.53033 0.71967C9.38968 0.579018 9.19891 0.5 9 0.5C8.80109 0.5 8.61032 0.579018 8.46967 0.71967C8.32902 0.860322 8.25 1.05109 8.25 1.25V8.75H0.75C0.551088 8.75 0.360322 8.82902 0.21967 8.96967C0.0790176 9.11032 0 9.30109 0 9.5C0 9.69891 0.0790176 9.88968 0.21967 10.0303C0.360322 10.171 0.551088 10.25 0.75 10.25H8.25V17.75C8.25 17.9489 8.32902 18.1397 8.46967 18.2803C8.61032 18.421 8.80109 18.5 9 18.5C9.19891 18.5 9.38968 18.421 9.53033 18.2803C9.67098 18.1397 9.75 17.9489 9.75 17.75V10.25H17.25C17.4489 10.25 17.6397 10.171 17.7803 10.0303C17.921 9.88968 18 9.69891 18 9.5C18 9.30109 17.921 9.11032 17.7803 8.96967C17.6397 8.82902 17.4489 8.75 17.25 8.75Z' fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='clip0_2697_14383'%3e%3crect width='18' height='18' fill='white' transform='translate(0 0.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+}
+
+.na-admin-dashboard-discover-accordion-wrapper
+  .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='18' height='19' viewBox='0 0 18 19' fill='none'%3e%3cg clip-path='url(%23clip0_2697_14383)'%3e%3cpath d='M17.25 8.75H9.75V1.25C9.75 1.05109 9.67098 0.860322 9.53033 0.71967C9.38968 0.579018 9.19891 0.5 9 0.5C8.80109 0.5 8.61032 0.579018 8.46967 0.71967C8.32902 0.860322 8.25 1.05109 8.25 1.25V8.75H0.75C0.551088 8.75 0.360322 8.82902 0.21967 8.96967C0.0790176 9.11032 0 9.30109 0 9.5C0 9.69891 0.0790176 9.88968 0.21967 10.0303C0.360322 10.171 0.551088 10.25 0.75 10.25H8.25V17.75C8.25 17.9489 8.32902 18.1397 8.46967 18.2803C8.61032 18.421 8.80109 18.5 9 18.5C9.19891 18.5 9.38968 18.421 9.53033 18.2803C9.67098 18.1397 9.75 17.9489 9.75 17.75V10.25H17.25C17.4489 10.25 17.6397 10.171 17.7803 10.0303C17.921 9.88968 18 9.69891 18 9.5C18 9.30109 17.921 9.11032 17.7803 8.96967C17.6397 8.82902 17.4489 8.75 17.25 8.75Z' fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='clip0_2697_14383'%3e%3crect width='18' height='18' fill='white' transform='translate(0 0.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.na-admin-dashboard-discover-accordion-wrapper
+  .accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.na-admin-dashboard-discover-accordion-header {
+  display: flex;
+  gap: 12px;
+}
+
+.na-admin-dashboard-discover-accordion-header-title h3 {
+  color: #fff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.na-admin-dashboard-discover-accordion-header-title p {
+  color: #fff;
+  font-family: Inter;
+  font-size: 14px;
+  margin-top: 4px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.na-admin-dashboard-discover-accordion-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.na-admin-dashboard-discover-accordion-body-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.na-admin-dashboard-discover-accordion-body-left-content {
+  display: flex;
+  gap: 12px;
+}
+
+/* discover artist cards */
+.na-admin-dashboard-manage-discover-discover-artist-card {
+  border-radius: 20px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  min-height: 250px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.na-admin-dashboard-manage-discover-discover-artist-card-description-container {
+  padding: 20px 20px;
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.na-admin-dashboard-manage-discover-discover-artist-card-description-container
+  h3 {
+    color: #efeee0;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.na-admin-dashboard-manage-discover-discover-artist-card-description-container
+  p {
+  color: #efeee0;
+  text-align: center;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 12px */
+}
+
+.na-admin-dashboard-manage-discover-artist-card-cross-btn {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  background-color: #ff6060;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.na-admin-dashboard-manage-discover-discover-artist-card-1 {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0.1%,
+      rgba(15, 18, 19, 0.85) 80.67%
+    ),
+    url('../../images/discover-card-image-1.png') lightgray 50% / cover
+      no-repeat;
+}
+
+.na-admin-dashboard-manage-discover-discover-artist-card-2 {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0.1%,
+      rgba(15, 18, 19, 0.85) 80.67%
+    ),
+    url('../../images/discover-card-image-1.png') lightgray 50% / cover
+      no-repeat;
+}
+
+.na-admin-dashboard-manage-discover-discover-artist-card-3 {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0.1%,
+      rgba(15, 18, 19, 0.85) 80.67%
+    ),
+    url('../../images/discover-card-image-3.png') lightgray 50% / cover
+      no-repeat;
+}
+
+.na-admin-dashboard-manage-discover-discover-artist-card-4 {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0.1%,
+      rgba(15, 18, 19, 0.85) 80.67%
+    ),
+    url('../../images/discover-card-image-2.png') lightgray 50% / cover
+      no-repeat;
+}

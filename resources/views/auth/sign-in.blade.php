@@ -106,6 +106,11 @@
                             <label for="listener">Im a Listener</label>
                         </div>
 
+                        <div class="bi-role--select--group">
+                            <input type="radio" name="role" value="admin" id="listener">
+                            <label for="listener">Im Admin</label>
+                        </div>
+
                         <!-- Role Validation Error Message -->
                         @error('role')
                             <p class="error-msg--auth--page">{{ $message }}</p>

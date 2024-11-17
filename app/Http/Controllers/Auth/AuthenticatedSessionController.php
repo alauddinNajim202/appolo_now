@@ -38,6 +38,9 @@ class AuthenticatedSessionController extends Controller
             } elseif ($user->role === 'listener') {
                 return redirect()->route('listener.dashboard');
             }
+            elseif ($user->role === 'admin') {
+                return redirect()->route('admin.dashboard');
+            }
         }
 
 

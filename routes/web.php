@@ -3,6 +3,8 @@
 use App\Http\Controllers\Auth\ForgotPasswordController;
 use App\Http\Controllers\Auth\GoogleController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Web\Backend\Admin\AdminDashboardController;
+use App\Http\Controllers\Web\Backend\Admin\SongImportController;
 use App\Http\Controllers\Web\Backend\Artist\ArtistDiscoverController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Web\Backend\Artist\DashboardController as ArtishDashboardController;
@@ -53,13 +55,19 @@ Route::middleware('auth')->group(function () {
 
 
 // artist routes
-Route::middleware('auth')->group(function () {
+Route::middleware(['auth', 'role:artist'])->group(function () {
 
     /// Artist Routes with Prefix
-    Route::prefix('artist-dashboard')->group(function () {
+    Route::prefix('artist/dashboard')->group(function () {
 
         // Dashboard
         Route::get('/', [ArtishDashboardController::class, 'index'])->name('artist.dashboard');
+
+
+        Route::get('import-song', [SongImportController::class, 'index'])->name('artist.dashboard.import_song');
+
+        //
+
 
         // Discover
         Route::get('discover', [ArtistDiscoverController::class, 'index'])->name('artist.discover');
@@ -94,10 +102,19 @@ Route::middleware('auth')->group(function () {
 
 
 
-Route::middleware('auth')->group(function () {
+Route::middleware(['auth', 'role:listener'])->group(function () {
 
     // listener routes
     Route::get('/listener/dashboard', [ListenerDashboardController::class, 'index'])->name('listener.dashboard');
 });
+
+
+// admin
+Route::middleware(['auth', 'role:admin'])->group(function () {
+
+    // admin routes
+    Route::get('/admin/dashboard', [AdminDashboardController::class, 'index'])->name('admin.dashboard');
+});
+
 
 require __DIR__ . '/auth.php';

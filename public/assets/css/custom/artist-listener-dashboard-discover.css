@@ -373,12 +373,25 @@
   gap: 10px;
 }
 
-.bi-modal--music--player--section .bi-audio--timeline progress {
+.bi-modal--music--player--section .bi-audio--timeline #song-progress {
   width: 100%;
   border-radius: 0;
   height: 5px;
   background-color: #E4E7E5;
 }
+#song-progress::-webkit-progress-value {
+  background-color: #024cda; 
+}
+
+#song-progress::-webkit-progress-bar {
+  background-color: #E4E7E5;
+}
+
+#song-progress::-moz-progress-bar {
+  background-color: #024cda; 
+}
+
+
 
 .bi--audio--time {
   color: #FAFAFA;

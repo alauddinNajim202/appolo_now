@@ -89,6 +89,15 @@
   padding: 12px;
   width: 100%;
 }
+
+.sm--withdraw-form-account .nice-select{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+
+}
 .sm--balance-right .sm--withdraw-btn {
   border-radius: 12px;
   border: 1px solid #efefef;

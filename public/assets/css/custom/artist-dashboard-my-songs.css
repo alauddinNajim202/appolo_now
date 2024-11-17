@@ -1,0 +1,521 @@
+:root {
+  --primary-font: "Inter", serif;
+  --secondary-font: "Manrope", sans-serif;
+  --tertiary-font: "Poppins", sans-serif;
+  --special-font: "Be Vietnam Pro", sans-serif;
+  --headline-font: "DM Sans", sans-serif;
+  --public-sans-font: "Public Sans", sans-serif;
+  --base-transition: all 0.4s ease-in-out;
+  --primary: #024cda;
+  --text-dark: #000;
+  --text-dark02: #1a2232;
+  --text-white: #fff;
+  --input-placeholder: #77878f;
+  --common--white--border: 1px solid #fff;
+  --common--gray--border: 1px solid #e4e7e9;
+  --primary-gradient: linear-gradient(180deg, #024cda -1.64%, #012874 100%);
+}
+
+/* -- artist my songs pages starts -- */
+
+.sm--artist-my-songs-wrapper {
+  border-radius: 20px;
+  border: 1px solid #e6e6e6;
+  background: #fff;
+  padding: 24px;
+}
+
+.sm--artist-my-songs-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sm--artist-my-songs-title-text {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.4px;
+}
+
+.sm--artist-my-songs-new-album-btn {
+  border-radius: 12px;
+  border: 1px solid #efefef;
+  background: var(--primary);
+  padding: 12px;
+  color: white;
+  font-weight: 600;
+}
+
+.sm--artist-tabs-wrapper {
+  padding-top: 14px;
+}
+
+.sm--artist-tabs-wrapper .nav-link {
+  background-color: #f5f8fe;
+  margin-right: 5px;
+  border: none;
+  color: var(--text-dark);
+}
+.sm--artist-tabs-wrapper .nav-link:hover {
+  border-bottom: 0px;
+}
+.sm--artist-tabs-wrapper .nav-tabs {
+  border-bottom: 1px solid rgb(239, 239, 239);
+  border-width: 1px;
+}
+.sm--artist-tabs-wrapper .nav-link.active {
+  background-color: var(--primary);
+  color: white;
+  border-bottom: 1px solid var(--primary);
+}
+
+.sm--my-songs-table-container {
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 8px;
+  margin-top: 24px;
+  overflow: hidden;
+}
+
+/* table */
+
+.sm--my-songs-table-container .sm--thead {
+  background-color: #fafafa;
+  padding: 14px 12px;
+  font-weight: 600;
+}
+.sm--my-songs-table-container .sm--thead:first-child {
+  width: 80%;
+}
+.sm--my-songs-table-container .sm--tdata {
+  padding: 10px 12px;
+}
+
+.sm--artist-my-song-published-btn {
+  background-color: var(--primary);
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+}
+.sm--artist-my-song-delete-btn {
+  border: 1px solid rgb(215, 215, 215);
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: white;
+  color: white;
+}
+
+.sm--actions-btn-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sm--artist-my-songs-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sm--artist-my-songs-image {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.sm--artist-my-songs-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sm--artist-my-songs-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sm--artist-my-songs-name {
+  color: #0f1114;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19.5px;
+}
+.sm--artist-my-songs-artist {
+  color: #0f1114;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.5px;
+}
+
+.sm--artist-published-song-published-btn {
+  border-radius: 8px;
+  border: 1px solid rgb(227, 227, 227);
+  padding: 10px 12px;
+  background-color: white;
+  font-weight: 500;
+  font-size: 14px;
+}
+.sm--artist-published-song-unpublished-btn {
+  border-radius: 8px;
+  background: var(--primary);
+  padding: 10px 12px;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+}
+
+/* -- album -- */
+
+.sm--artist-album-container {
+  padding-top: 24px;
+}
+
+.sm--artist-album-grid-wrapper {
+  grid-template-columns: repeat(6, 1fr);
+  display: grid;
+  gap: 32px;
+}
+
+.sm--artist-album-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.sm--artist-album-card-img {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.sm--artist-album-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sm--artist-album-card-text {
+  padding-left: 4px;
+}
+
+.sm--artist-album-card-name {
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 4px;
+}
+.sm--artist-album-card-total-song {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* music list */
+.sm--artist-album-music {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding-top: 24px;
+}
+
+.sm--artist-album-music-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sm--artist-music-image {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.sm--artist-music-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sm--artist-music-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sm--artist-music-text-name {
+  color: #000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.2px;
+}
+
+.sm--artist-music-text-artist {
+  color: var(--primary);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.2px;
+}
+
+.sm--artist-music-duration {
+  padding-left: 20px;
+}
+
+.sm--artist-album-playPauseIcon {
+  cursor: pointer;
+}
+
+/* -- add new album modal -- */
+
+.sm--artist-addNewAlbum-name {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.sm--artist-addNewAlbum-name label {
+  color: #1d2026;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.14px;
+}
+
+.sm--artist-addNewAlbum-name input {
+  border-radius: 10px;
+  border: 1px solid #e9eaf0;
+  background: #fff;
+  padding: 10px 12px;
+}
+
+.sm--artist-addNewAlbum-search {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #e9eaf0;
+  background: #fff;
+}
+
+.sm--artist-addNewAlbum-search input {
+  flex: 1 1 0%;
+  border: none;
+}
+
+.sm--artist-addNewAlbum-search svg {
+  cursor: pointer;
+}
+
+.sm--artist-addNewAlbum-select-music-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sm--artist-addNewAlbum-image {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.sm--artist-addNewAlbum-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sm--select-song-title {
+  color: #1d2026;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  padding: 24px 0px;
+}
+
+.sm--artist-addNewAlbum-music-info-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sm--artist-addNewAlbum-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sm--artist-addNewAlbum-name1 {
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.sm--artist-addNewAlbum-text .sm--artist-addNewAlbum-artist {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: var(--secondary-font);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.sm--artist-addNewAlbum-checked input {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+
+.sm--artist-addNewAlbum-music-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sm--artist-addNewAlbum-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+.sm--artist-addNewAlbum-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.sm--artist-addNewAlbum-cancel-btn {
+  border-radius: 10px;
+  background: #f5f7fa;
+  padding: 12px 20px;
+  color: var(--text-dark);
+  font-size: 16px;
+  font-weight: 500;
+}
+.sm--artist-addNewAlbum-save-btn {
+  border-radius: 10px;
+  color: white;
+  padding: 9px 20px;
+  background-color: var(--primary);
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.sm--publish-song-modal-title {
+  color: #0f1114;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19.5px;
+  padding: 24px 0px;
+  text-align: center;
+}
+
+.sm--delete-song-modal-title {
+  color: #0f1114;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19.5px;
+  padding: 24px 0px;
+  text-align: center;
+}
+
+.sm--publish-song-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.sm--delete-song-modal-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.sm--publish-song-modal-cancel-btn {
+  border-radius: 10px;
+  background: #f5f7fa;
+  padding: 0px 14px;
+  color: #1d2026;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: -0.128px;
+  text-transform: capitalize;
+}
+
+.sm--publish-song-modal-publish-btn {
+  border-radius: 10px;
+  background: #024CDA;
+  font-size: 16px;
+  font-style: normal;
+  color: white;
+  padding: 0px 14px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 48px;
+  letter-spacing: -0.128px;
+  text-transform: capitalize;
+  border: none;
+}
+.sm--delete-song-modal-cancel-btn {
+  border-radius: 10px;
+  background: #f5f7fa;
+  padding: 0px 14px;
+  color: #1d2026;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: -0.128px;
+  text-transform: capitalize;
+}
+
+.sm--delete-song-modal-delete-btn {
+  border-radius: 10px;
+  background: #ff6060;
+  color: #fff;
+  font-size: 16px;
+  padding: 0px 14px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: -0.128px;
+  text-transform: capitalize;
+  border: none;
+}
+
+/* .sm-artist-addNewAlbum-select-list-main-wrapper{
+  
+} */
+/* -- artist my songs pages starts -- */

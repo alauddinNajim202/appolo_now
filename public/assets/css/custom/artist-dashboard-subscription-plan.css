@@ -19,7 +19,7 @@
 
 .bi-artists--subscription--plan--page--wrapper {
     width: 100%;
-    min-height: 100%;
+
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -238,22 +238,28 @@
     border-radius: 50%;
 }
 
-.bi-add--new--card--form{
+.bi-add--new--card--form {
     width: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 18px;
     justify-content: flex-start;
     align-items: flex-start;
 }
-.bi-artist--add--new--card--input--outer--wrapper{
+
+.bi-add--new--card--form.open {
+    display: flex;
+}
+
+.bi-artist--add--new--card--input--outer--wrapper {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 18px;
 }
-.bi-artist--add--new--card--input--wrapper{
+
+.bi-artist--add--new--card--input--wrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -262,3 +268,80 @@
     align-items: flex-start;
 }
 
+
+
+
+
+.bi-subcription--payment--success--modal {
+    background: rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(10px);
+}
+
+.bi-subcription--payment--success--modal .modal-body {
+    border-radius: 20px;
+    border: var(--common--gray--border);
+    background: #FFF;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bi--modal--success--img {
+    width: 150px;
+    height: 150px;
+
+}
+
+.bi--modal--success--img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bi--success--modal--infos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bi-success--modal--header {
+    color: #1C2A3A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    text-align: center;
+    /* 30px */
+}
+
+.bi-success--modal--sub-header {
+    color: var(--text-dark);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 21px */
+}
+
+.bi-payment--success--btn {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    border-radius: 10px;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    width: 100%;
+    /* 24px */
+}

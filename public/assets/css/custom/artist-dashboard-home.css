@@ -1,0 +1,508 @@
+:root {
+  --primary-font: 'Inter', serif;
+  --secondary-font: 'Manrope', sans-serif;
+  --tertiary-font: 'Poppins', sans-serif;
+  --special-font: 'Be Vietnam Pro', sans-serif;
+  --headline-font: 'DM Sans', sans-serif;
+  --public-sans-font: 'Public Sans', sans-serif;
+  --base-transition: all 0.4s ease-in-out;
+  --primary: #024cda;
+  --text-dark: #000;
+  --text-dark02: #1a2232;
+  --text-white: #fff;
+  --input-placeholder: #77878f;
+  --common--white--border: 1px solid #fff;
+  --common--gray--border: 1px solid #e4e7e9;
+  --primary-gradient: linear-gradient(180deg, #024cda -1.64%, #012874 100%);
+}
+
+
+
+.bi-artist--dashboard--home--page--wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  background-color: var(--text-white);
+  border-radius: 20px;
+  border: var(--common--gray--border);
+}
+
+.bi-artist--dashboard--insights--overview--section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.bi-artist--dashboard--insights--overview--section--header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bi-import--songs--btn {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background-color: var(--primary);
+  color: var(--text-white);
+}
+
+.bi-insights--overview--counters {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  gap: 10px;
+}
+
+.bi-common--overview--counter--box {
+  width: 100%;
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  gap: 12px;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 120px;
+}
+
+.bi-common--overview--counter--box.total--discoveries {
+  background-color: var(--text-dark);
+}
+
+.bi-common--overview--counter--box.published--songs {
+  background: var(--primary-gradient);
+}
+
+.bi-common--overview--counter--box.total--listeners {
+  background: var(--primary-gradient);
+}
+
+.bi-common--overview--counter--box--icon {
+  width: 68px;
+  min-width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.bi-common--overview--counter--box--icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bi-common--overview--counter--box--text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.bi-common--overview--counter--box--text--heading {
+  color: var(--text-white, #FFF);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: -0.13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.bi-common--overview--counter--box--value {
+  color: var(--text-white);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: -1.44px;
+}
+
+.bi-common--overview--counter--box--text--heading .view-details--btn {
+  padding: 10px;
+  border: var(--common--white--border);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-white);
+}
+
+
+.bi-investments--lists--wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 12px;
+  border: var(--common--gray--border);
+  padding: 10px;
+}
+
+.bi-artist--investment--accordion {
+  width: 100%;
+}
+
+.bi-artist--investment--accordion .accordion-item {
+  border: none;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+
+.bi-artist--investment--accordion--header {
+
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: var(--primary);
+}
+
+.bi-artist--investment--accordion .accordion-body {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: flex-end;
+  border: var(--common--gray--border);
+  margin-top: 24px;
+  border-radius: 12px;
+}
+
+.bi-artist--investment--graph--wrapper {
+  width: 100%;
+}
+
+.bi-artist--investment--accordion--header--info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 13px;
+}
+
+.bi-artist--invested--song--text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.bi-artist--invested--img {
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.bi-artist--invested--img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bi-invested--song--name {
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.bi-invested--album--name {
+  color: #FFF;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.bi-invested--time {
+  color: #FFF;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.bi-artist--investment--header--graph {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.bi-artist--investment--accordion .nice-select {
+  border: var(--common--gray--border);
+  border-radius: 12px;
+}
+
+.bi-artist--investment--accordion .nice-select .current {
+  color: #6F767E;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.14px;
+}
+
+.bi-artist--investment--accordion .nice-select::after {
+  width: 7px;
+  height: 7px;
+  margin-top: -4px;
+}
+
+.bi-artist--investment--accordion .nice-select .list {
+  z-index: 300;
+}
+
+
+/* import song section starts */
+
+.bi-artist--dashboard--import--song--section {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.bi-artist--dashboard--import--songs--container {
+  width: 100%;
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  align-items: flex-start;
+
+}
+
+.bi-apple--song--import--side--wrapper,
+.bi-spotify--song--import--side--wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 24px;
+}
+
+.bi-songs--import--common--btn--wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.bi-import--songs--common--btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid #D6D6D6;
+  background-color: var(--text-white);
+  padding: 13px 15px;
+  color: #000;
+  font-family: var(--special-font);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  /* 150% */
+}
+
+.bi-songs--import--common--song--wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.bi-songs--import--common--song--wrapper.apple {
+  border: 1px solid #FF749B;
+}
+
+.bi-songs--import--common--song--wrapper.spotify {
+  border: 1px solid #1ED760;
+}
+
+.bi-songs--import--common--song--wrapper--breadcrumb {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--text-dark);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.bi-artist--import--song--album--lists--wrapper {
+  width: 100%;
+}
+
+.bi-common--album--lists--accordion {
+  width: 100%;
+}
+
+.bi-common--album--lists--accordion .accordion-item {
+  border: none;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.bi-common--album--lists--accordion .accordion-body {
+  padding: 0;
+}
+
+.bi-common--album--item--header {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  transition: var(--base-transition);
+  cursor: pointer;
+  background: transparent;
+  border-radius: 10px;
+}
+
+/* Hover effect */
+.bi-common--album--item--header:hover {
+  background: rgba(2, 76, 218, 0.04);
+}
+
+/* Background color when expanded (not collapsed) */
+.bi-common--album--item--header:not(.collapsed) {
+  background: rgba(2, 76, 218, 0.04);
+}
+
+
+.bi-album--cover--photo {
+  width: 50px;
+  min-width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.bi-album--cover--photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bi-album--info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.bi-album--name {
+  color: var(--text-dark);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.bi-album--sub--name {
+  color: rgba(0, 0, 0, 0.50);
+  font-family: var(--secondary-font);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.bi-common--album--songs--lists--wrapper {
+  width: 100%;
+  padding: 16px 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.bi-album--song--list--wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bi-album--song--list--info--side {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+  align-items: center;
+}
+
+.bi-album--common--checkbox {
+  width: 24px;
+  height: 24px;
+  accent-color: var(--primary);
+}
+
+.bi-selected--songs--from--both--album--wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.bi-selected--song--row {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+
+.bi-artist--dashboard--insights--overview--section--map {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+/* import song section ends */

@@ -1,0 +1,184 @@
+.na-admin-dashboard-homepage-main-wrapper {
+  padding: 24px;
+  border-radius: 20px;
+  border: 1px solid #e6e6e6;
+  background: #fff;
+}
+.na-admin-dashboard-title-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom:24px;
+}
+.na-admin-dashboard-overview-add-btn {
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* plan cards */
+.na-admin-dashboard-plan-cards-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+}
+.na-admin-dashboard-plan-card {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  align-items: flex-start;
+  gap: 12px;
+  width: 25%;
+}
+.na-admin-dashboard-plan-card-top-icon {
+  padding: 12px;
+  border-radius: 50%;
+  background: #1a338e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.na-admin-dashboard-plan-card-information-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.na-admin-dashboard-card-title-wrapper {
+  magin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.na-admin-dashboard-card-title-wrapper h3 {
+  color: #33383f;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: -0.13px;
+}
+.na-admin-plan-card-number h2 {
+  color: #1a1d1f;
+  margin-top: -4px;
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px;
+}
+.na-admin-dashboard-plan-card-progress {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 2px 8px;
+  gap: 8px;
+  border-radius: 4px;
+}
+.na-admin-dashboard-plan-card-progress p {
+  color: #83bf6e;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 133.333% */
+  letter-spacing: -0.12px;
+}
+.na-admin-dashboard-plan-card-progress span {
+  color: #6f767e;
+}
+.na-admin-dashboard-plan-card-1 {
+  border-radius: 12px;
+  background: rgba(113, 170, 255, 0.25);
+}
+.na-admin-dashboard-plan-card-2 {
+  border-radius: 12px;
+  background: rgba(20, 106, 176, 0.1);
+}
+.na-admin-dashboard-plan-card-2 .na-admin-dashboard-plan-card-top-icon {
+  background: #146ab0;
+}
+.na-admin-dashboard-plan-card-3 {
+  border-radius: 12px;
+  background: rgba(66, 133, 244, 0.1);
+}
+.na-admin-dashboard-plan-card-3 .na-admin-dashboard-plan-card-top-icon {
+  background: #4285f4;
+}
+.na-admin-dashboard-plan-card-4 {
+  border-radius: 12px;
+  background: var(--color-black-10, rgba(0, 0, 0, 0.1));
+}
+.na-admin-dashboard-plan-card-4 .na-admin-dashboard-plan-card-top-icon {
+  background: #000;
+}
+
+/* ===graphs:start=== */
+.na-admin-dashboard-register-graph-wrapper {
+  display: flex;
+  margin-top: 24px;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+.na-admin-dashboard-register-graph-container {
+  display: flex;
+  /* height: 380px; */
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex: 1 0 0;
+  border-radius: 8px;
+  border: 1px solid rgba(23, 21, 67, 0.1);
+  background: #fff;
+}
+.na-admin-dashboard-register-graph-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+.na-admin-dashboard-register-graph-title-container h3 {
+  color: #1b1311;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 177.778% */
+  letter-spacing: -0.36px;
+}
+
+.na-admin-dashboard-register-graph-title-container .nice-select {
+  border-radius: 10px;
+  border: 2px solid #efefef;
+  color: var(--Neutral-04, #6f767e);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  width: 120px;
+  letter-spacing: -0.14px;
+}
+.na-admin-dashboard-register-graph-title-container .nice-select .list {
+  width: 120px;
+}
+.na-admin-dashboard-register-graph-title-container .nice-select::after {
+  height: 8px;
+  width: 8px;
+  right: 16px;
+}
+.na-admin-dashboard-listener-graph-wrapper,
+.na-admin-dashboard-artist-graph-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* ===graphs:end=== */

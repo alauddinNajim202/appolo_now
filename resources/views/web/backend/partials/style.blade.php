@@ -32,7 +32,8 @@
     href="https://cdn.jsdelivr.net/npm/amplitudejs@5.3.2/dist/amplitude.min.css"
     /> -->
 <!-- custom css -->
-
+<link rel="stylesheet" href="{{ asset('assets/css/custom/artist-dashboard-home.css') }} ">
+<link rel="stylesheet" href="../assets/css/custom/artist-listener-dashboard-home.css" />
 <link rel="stylesheet" href="{{ asset('assets/css/custom/artist-listener-dashboard-discover.css') }}" />
 <link rel="stylesheet" href="{{ asset('assets/css/custom/artist-dashboard-profile-settings.css') }}" />
 <link rel="stylesheet" href="{{ asset('assets/css/custom/artist-dashboard-subscription-plan.css') }}"/>
@@ -41,4 +42,6 @@
 <link rel="stylesheet" href=" {{ asset('assets/css/style.css') }} " />
 <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}" />
 <link rel="stylesheet" href=" {{ asset('assets/css/helper.css') }} " />
-<link rel="stylesheet" href="../assets/css/custom/artist-listener-dashboard-home.css" />
+
+
+@stack('styles')
